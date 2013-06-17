@@ -1,11 +1,11 @@
-A node.js client for controlling BAYWeb Internet thermostats.
+A node.js client for controlling BAYweb Internet thermostats.
 
 [![Build Status](https://secure.travis-ci.org/alexkwolfe/node-bayweb.png)](http://travis-ci.org/alexkwolfe/node-bayweb)
 
 
 ## Usage
 
-Simply create a new Thermostat using the ID and Key from your BAYWeb Cloud EMS account. The callback is optional. 
+Simply create a new Thermostat using the ID and Key from your BAYweb Cloud EMS account. The callback is optional.
 If you provide one, then the thermostat data will be immediately fetched from Cloud EMS.
 
 ```javascript
@@ -13,9 +13,9 @@ var Thermostat = require('bayweb');
 
 var stat = new Thermostat('ID', 'APIKEY', function(err) {
   if (err)
-    console.log('Error fetching data from BAYWeb server: ' + err);
+    console.log('Error fetching data from BAYweb server: ' + err);
   else
-    console.log('Loaded data from BAYWeb server!');
+    console.log('Loaded data from BAYweb server!');
 });
 ```
 
@@ -68,8 +68,8 @@ Refresh data from Cloud EMS...
 ```javascript
 stat.fetch(function(err) {
   if (err)
-    console.log('Error fetching thermostat data: ' + err);
+    console.log('Error fetching data from BAYweb server: ' + err);
   else
-    console.log('Thermostat data fetched successfully');
+    console.log('Loaded data from BAYweb server!');
 });
 ```

@@ -7,8 +7,8 @@ class Thermostat
   ###
   Public: Instantiate a new Thermostat
 
-  id: The thermostat identifier (from the API section of the BAYWeb Cloud EMS
-  key: The API key for the thermostat (also from the API section of the BAYWeb Cloud EMS)
+  id: The thermostat identifier (from the API section of the BAYweb Cloud EMS
+  key: The API key for the thermostat (also from the API section of the BAYweb Cloud EMS)
   cb: Optional callback. If specified, the Thermostat data will be immediately fetched and
       the callback invoked on success or error
 
@@ -64,7 +64,7 @@ class Thermostat
     * setPoint - integer value of the currently desired set point
 
   cb: Optional callback. If specified, the callback will be invoked with two parameters. The first is an
-      error if one occurred, otherwise null. The second is the BAYWeb server response.
+      error if one occurred, otherwise null. The second is the BAYweb server response.
 
   Returns nothing
   ###
@@ -98,7 +98,7 @@ class Thermostat
 
 
   ###
-  Private: Make the HTTP request to the BAYWeb service and parse the JSON response body to an object.
+  Private: Make the HTTP request to the BAYweb service and parse the JSON response body to an object.
 
   params: The parameters to pass. ID and Key are merged into these params.
   cb: The callback to invoke when the request has completed (or errored).

@@ -1,0 +1,31 @@
+{
+  "name": "bayweb",
+  "description": "Control BAYweb internet thermostats",
+  "author": "Alex Wolfe <alexkwolfe@gmail.com>",
+  "version": "0.0.1",
+  "main": "lib/thermostat.js",
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/mit-license.php"
+  }],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexkwolfe/node-bayweb.git"
+  },
+  "engines": {
+    "node": ">=0.10.5"
+  },
+  "scripts": {
+    "test": "cake test",
+    "prepublish": "cake build"
+  },
+  "dependencies": {
+    "request": "~> 2.21.0"
+  },
+  "devDependencies": {
+    "coffee-script": ">= 1.4.0",
+    "mocha": ">= 1.7.x",
+    "chai": ">= 1.4.x",
+    "nock": ">= 0.0.0"
+  }
+}
